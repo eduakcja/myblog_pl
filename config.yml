@@ -1,5 +1,50 @@
 baseURL: http://example.org/
 languageCode: pl-pl
 title: dariusz.blog
+theme: "PaperMod"
+enableEmoji: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+
+menu:
+    main:
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 30
+      
+
+params:
+    homeInfoParams:
+        Title: Hi there... 👋 👍 🙂 
+        Content: I am glad you are here. This blog is about **human rights, education, technology, young people** and many other topics I am interested in. Enjoy it and get in touch! 
+
+    socialIcons:
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/dariusz-grzemny-39716a3/"
+    - name: RSS
+      url: "index.xml"
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowToc: false
+
+    # defaultTheme: light
+    # defaultTheme: dark
+    defaultTheme: auto # to switch between dark or light according to browser theme
 
 
